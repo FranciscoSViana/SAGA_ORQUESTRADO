@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SAGA_ORQUESTRADO.iml" filepath="$PROJECT_DIR$/.idea/SAGA_ORQUESTRADO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/br.com.microservices.orchestrated.inventory-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/br.com.microservices.orchestrated.inventory-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inventory-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/inventory-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inventory-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/inventory-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/orchestrator-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/orchestrator-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/orchestrator-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/orchestrator-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/payment-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/payment-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/product-validation-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/product-validation-service.main.iml" />
+    </modules>
+  </component>
+</project>
