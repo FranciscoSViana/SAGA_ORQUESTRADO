@@ -22,7 +22,7 @@ public class EventService {
     private final EventRepository eventRepository;
 
     public void notifyEnding(Event event) {
-        event.setOrderId(event.getId());
+        event.setOrderId(event.getPayload().getId());
         event.setCreatedAt(LocalDateTime.now());
 
         save(event);

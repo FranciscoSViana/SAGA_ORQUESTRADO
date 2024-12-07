@@ -60,7 +60,7 @@ public class ProductValidationService {
         validateProductsInformed(event);
 
         if (validationRepository.existsByOrderIdAndTransactionId(event.getOrderId(), event.getTransactionId())) {
-            throw new ValidationException("THere's another transactionId for this validation.");
+            throw new ValidationException("There's another transactionId for this validation.");
         }
 
         event.getPayload().getProducts().forEach(product -> {
@@ -95,7 +95,7 @@ public class ProductValidationService {
     private void handleSuccess(Event event) {
         event.setStatus(SUCCESS);
         event.setSource(CURRENT_SOURCE);
-        addHistory(event, "Porducts are validated successfully!");
+        addHistory(event, "Products are validated successfully!");
     }
 
     private void addHistory(Event event, String message) {

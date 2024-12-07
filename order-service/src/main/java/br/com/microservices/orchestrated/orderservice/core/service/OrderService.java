@@ -7,12 +7,14 @@ import br.com.microservices.orchestrated.orderservice.core.producer.SagaProducer
 import br.com.microservices.orchestrated.orderservice.core.repository.OrderRepository;
 import br.com.microservices.orchestrated.orderservice.core.utils.JsonUtil;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Slf4j
 @Service
 @AllArgsConstructor
 public class OrderService {
@@ -30,7 +32,7 @@ public class OrderService {
     public Order createOrder(OrderRequest orderRequest) {
         var order = Order
                 .builder()
-                .orderProducts(orderRequest.getProducts())
+                .products(orderRequest.getProducts())
                 .createdAt(LocalDateTime.now())
                 .transactionId(
                         String.format(TRANSACTION_ID_PATTERN, Instant.now().toEpochMilli(), UUID.randomUUID())
